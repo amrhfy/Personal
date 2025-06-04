@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Nur Afiqah! ✨</title>
+  <script src="https://cdn.tailwindcss.com" async></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Celebrating six months of memories with Nur Afiqah—an interactive birthday story.">
+  <link rel="icon" href="img/favicon.ico">
+  <meta property="og:title" content="Happy Birthday, Nur Afiqah! ✨">
+  <meta property="og:description" content="Celebrating six months of memories with Nur Afiqah—an interactive birthday story.">
+  <meta property="og:image" content="img/cover.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="overflow-hidden">
+  <noscript><p class="p-4 text-center text-white bg-red-500">Please enable JavaScript to view the interactive birthday carousel.</p></noscript>
+  <!-- Floating particles background -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="absolute top-10 left-10 w-2 h-2 bg-pink-300 rounded-full animate-float opacity-60"></div>
+    <div class="absolute top-32 right-20 w-3 h-3 bg-purple-300 rounded-full animate-float opacity-40" style="animation-delay: 0.5s;"></div>
+    <div class="absolute bottom-20 left-16 w-2 h-2 bg-blue-300 rounded-full animate-float opacity-50" style="animation-delay: 1s;"></div>
+    <div class="absolute bottom-40 right-10 w-4 h-4 bg-yellow-300 rounded-full animate-float opacity-30" style="animation-delay: 1.5s;"></div>
+    <div class="absolute top-1/2 left-1/4 w-1 h-1 bg-white rounded-full animate-pulse opacity-70"></div>
+    <div class="absolute top-1/3 right-1/3 w-2 h-2 bg-pink-200 rounded-full animate-pulse opacity-50" style="animation-delay: 2s;"></div>
+  </div>
+
+  <div id="carousel" class="snap-x snap-mandatory overflow-x-scroll h-screen flex" role="region" aria-roledescription="carousel" aria-label="Memories Carousel">
+    
+    <!-- Cover Page -->
+    <section class="snap-center w-full flex-shrink-0 relative overflow-hidden">
+      <!-- Background with gradient mesh -->
+      <div class="absolute inset-0 bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600"></div>
+      <div class="absolute inset-0 bg-gradient-to-tl from-yellow-400/20 via-transparent to-cyan-400/20"></div>
+      
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-8 text-white">
+        <!-- Animated cake icon -->
+        <div class="relative mb-8">
+          <div class="glass p-6 rounded-full animate-glow">
+            <i class="fa-solid fa-birthday-cake text-5xl text-pink-200 animate-bounce-slow"></i>
+          </div>
+          <div class="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full animate-ping"></div>
+        </div>
+
+        <!-- Profile section -->
+        <div class="text-center animate-fadeInUp">
+          <div class="relative inline-block mb-6">
+            <div class="w-36 h-36 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 p-1 animate-pulse-slow">
+              <img src="img/first-02.jpg" 
+                   alt="Nur Afiqah" 
+                   class="w-full h-full rounded-full object-cover border-4 border-white/50">
+            </div>
+            <div class="absolute -bottom-2 -right-2 bg-pink-500 text-white p-2 rounded-full animate-bounce">
+              <i class="fa-solid fa-heart text-sm"></i>
+            </div>
+          </div>
+          
+          <h1 class="text-5xl font-bold mb-3 font-dancing gradient-text animate-slideInRight">
+            Happy Birthday Sayang!
+          </h1>
+          <p class="text-2xl font-semibold mb-2 tracking-wide">Nur Afiqah Binti Faizal</p>
+          <p class="text-lg opacity-90 mb-8">✨ Selamat Bertukar 27 Tahun✨</p>
+          
+          <button onclick="startJourney()" class="relative inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold shadow-xl transition-transform duration-500 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-pink-400 overflow-hidden group">
+            <!-- Shine overlay -->
+            <span class="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></span>
+            <span class="relative flex items-center space-x-3 text-lg">
+              <span>Selak</span>
+              <i class="fa-solid fa-arrow-right transition-transform duration-500 group-hover:translate-x-2"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Month 1: The Beginning -->
+    <section class="snap-center w-full flex-shrink-0 relative overflow-hidden section-enter" data-month="1">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
+        
+        <div class="glass p-4 rounded-full mb-6 animate-float">
+          <i class="fa-solid fa-handshake text-4xl text-indigo-600"></i>
+        </div>
+        
+        <div class="text-center max-w-md">
+          <span class="inline-block px-4 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-4">
+            Chapter Shatu
+          </span>
+          <h2 class="text-4xl font-bold text-gray-800 mb-6 font-dancing">Lahirnya Si Kecil</h2>
+          
+          <div class="relative mb-6 group">
+            <div class="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-500 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform"></div>
+            <img src="img/first-08.jpg" 
+                 alt="Cozy cafe" 
+                 class="relative w-72 h-56 object-cover rounded-2xl shadow-xl border-4 border-white">
+            <div class="absolute top-3 right-3 bg-red-500 text-white p-2 rounded-full animate-pulse">
+              <i class="fa-solid fa-heart text-sm"></i>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            IC KL MATTTT, GEMPAK MATTT. Lahirnya Nur? cahaya yang akan mencahayai dunia keluarga Faizal. It's a girl and a sweet one.
+          </p>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            1998, 05 Jun. 2:35 AM. 3.2kg. 50cm (agak agak je tak tahu accurate ke tak) tapi dilahirkan dengan sihat dan bijak (ehem).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Month 2: Growing Closer -->
+    <section class="snap-center w-full flex-shrink-0 relative overflow-hidden section-enter" data-month="2">
+      <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-100"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
+        
+        <div class="glass p-4 rounded-full mb-6 animate-float" style="animation-delay: 0.5s;">
+          <i class="fa-solid fa-user-friends text-4xl text-emerald-600"></i>
+        </div>
+        
+        <div class="text-center max-w-md">
+          <span class="inline-block px-4 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium mb-4">
+            Chapter KEDUA EK
+          </span>
+          <h2 class="text-4xl font-bold text-gray-800 mb-6 font-dancing">Langkah Pertama</h2>
+          
+          <div class="relative mb-6 group">
+            <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-2xl transform -rotate-2 group-hover:-rotate-3 transition-transform"></div>
+            <img src="img/first-03.jpg" 
+                 alt="Friends laughing" 
+                 class="relative w-72 h-48 object-cover rounded-2xl shadow-xl border-4 border-white">
+            <div class="absolute bottom-3 left-3 bg-yellow-400 text-white p-2 rounded-full animate-spin" style="animation-duration: 3s;">
+              <i class="fa-solid fa-star text-sm"></i>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            TIBER LANGKAH PERTAMA, SAYANG MESTI BOLEH BERJALAN LAMBAT KAN HEHE (JK). Dibesarkan di bandar marttttt, tapi sekarang membawa budaya kampung girl mixed with bandar girl.
+          </p>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            I bet you were a nice girl, but you were also a naughty one (based on real experience now).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Month 3: Sweet Memories -->
+    <section class="snap-center w-full flex-shrink-0 relative overflow-hidden section-enter" data-month="3">
+      <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-pink-100"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
+        
+        <div class="glass p-4 rounded-full mb-6 animate-float" style="animation-delay: 1s;">
+          <i class="fa-solid fa-map-location-dot text-4xl text-rose-600"></i>
+        </div>
+        
+        <div class="text-center max-w-md">
+          <span class="inline-block px-4 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-medium mb-4">
+            Chapter KETIGA NAAAA
+          </span>
+          <h2 class="text-4xl font-bold text-gray-800 mb-6 font-dancing">Sekolah Awal</h2>
+          
+          <div class="relative mb-6 group">
+            <div class="absolute inset-0 bg-gradient-to-r from-rose-400 to-pink-500 rounded-2xl transform rotate-1 group-hover:rotate-2 transition-transform"></div>
+            <img src="img/first-07.jpg" 
+                 alt="City adventure" 
+                 class="relative w-72 h-48 object-cover rounded-2xl shadow-xl border-4 border-white">
+            <div class="absolute top-3 left-3 bg-blue-500 text-white p-2 rounded-full animate-pulse">
+              <i class="fa-solid fa-compass text-sm"></i>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            Asalnya dulu budak pandai, tapi sekarang lagi pandai. SESUNGGUHNYA PELAJAR PUTRAJAYA SANGATLAH CERDIK, FROM PUCHONG TO PUTRAJAYA.
+          </p>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            But to me, whatever experience you had dulu masa sekolah yang create you now kan? soo I'm happy je that your past can shape your current character. And from there juga lah kita learn a lot of things kan sayang?
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Month 4: Deeper Connection -->
+    <section class="snap-center w-full flex-shrink-0 relative overflow-hidden section-enter" data-month="4">
+      <div class="absolute inset-0 bg-gradient-to-br from-purple-50 to-violet-100"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
+        
+        <div class="glass p-4 rounded-full mb-6 animate-float" style="animation-delay: 1.5s;">
+          <i class="fa-solid fa-moon text-4xl text-purple-600"></i>
+        </div>
+        
+        <div class="text-center max-w-md">
+          <span class="inline-block px-4 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium mb-4">
+            ZAMAN KEGEMILANGAN
+          </span>
+          <h2 class="text-4xl font-bold text-gray-800 mb-6 font-dancing">ZAMAN U</h2>
+          
+          <div class="relative mb-6 group">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-violet-500 rounded-2xl transform -rotate-1 group-hover:-rotate-2 transition-transform"></div>
+            <img src="img/first-05.jpg" 
+                 alt="Starry night" 
+                 class="relative w-72 h-48 object-cover rounded-2xl shadow-xl border-4 border-white">
+            <div class="absolute top-3 right-3 bg-yellow-300 text-gray-800 p-2 rounded-full animate-pulse">
+              <i class="fa-solid fa-star text-sm"></i>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            Palam, terpaling palam. Who would of thought kan yang sayang akan jadi seorang HR from studying office system management? i mean mestila u kan hehe.
+          </p>
+
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            DEGREE UNTUNGLA. I'm proud of you. Whatever you learnt, go through dekat uni, make sayang a better sayang.
+          </p>
+          
+          <button class="group bg-gradient-to-r from-purple-500 to-violet-600 text-white px-6 py-3 rounded-full hover:from-purple-600 hover:to-violet-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <span class="flex items-center space-x-2">
+              <span>Under the Stars</span>
+              <i class="fa-solid fa-heart group-hover:animate-bounce"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--  Celebrating You -->
+    <section class="snap-center w-full flex-shrink-0 relative overflow-hidden section-enter" data-month="6">
+      <div class="absolute inset-0 bg-gradient-to-br from-pink-100 via-purple-50 to-indigo-100"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full p-8">
+        
+        <div class="glass p-4 rounded-full mb-6 animate-glow">
+          <i class="fa-solid fa-gift text-4xl text-pink-600 animate-bounce-slow"></i>
+        </div>
+        
+        <div class="text-center max-w-md">
+          <span class="inline-block px-4 py-1 bg-pink-100 text-pink-800 rounded-full text-sm font-medium mb-4">
+            Finaly
+          </span>
+          <h2 class="text-4xl font-bold text-gray-800 mb-6 font-dancing">Jom Serious</h2>
+          
+          <div class="relative mb-6 group">
+            <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-500 rounded-2xl transform -rotate-1 group-hover:rotate-0 transition-all duration-500"></div>
+            <img src="img/first-06.jpg" 
+                 alt="Birthday celebration" 
+                 class="relative w-36 h-26 object-cover rounded-2xl shadow-xl border-4 border-white">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="bg-white/80 backdrop-blur-sm p-3 rounded-full animate-pulse">
+                <i class="fa-solid fa-birthday-cake text-2xl text-pink-600"></i>
+              </div>
+            </div>
+          </div>
+          
+          <p class="text-gray-700 text-xs leading-relaxed mb-6">
+            Sayang, 27 tahun sayang hidup, at this young age, you have achieved so much. I'm proud of you. From getting your own car to getting a stable (hmm) job, not everyone can do that at this age. 
+          </p>
+
+          <p class="text-gray-700 text-xs leading-relaxed mb-6">
+            From now on, you are a grown up girl. You have to face the real world now. You have to be independent now. You have to be strong now. You have to be a girl who can handle everything now.
+          </p>
+
+          <p class="text-gray-700 text-xs leading-relaxed mb-6">
+            I will be there for you always. I will support you always. I will love you always. AND MOST IMPORTANTLY, I WILL ALWAYS BE HERE FOR YOU. Reassuring you, and be the comfort space for you.
+          </p>
+
+        <p class="text-gray-700 text-xs leading-relaxed mb-6">
+        I know your journey to improve your self-esteem through workouts and struggles hasn't been easy. But sayang, the first step is the hardest. You have done it, and I'm proud of you.
+        </p>
+
+        <p class="text-gray-700 text-xs leading-relaxed mb-6">
+            I love you. I love you so much. I love you more than anything in this world. I love you more than my life. I love you more than my soul.
+        </p>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="fixed top-0 left-0 w-full h-1 bg-white/20 z-30">
+    <div id="progress" class="h-full bg-gradient-to-r from-pink-400 to-purple-500 transition-all duration-500 ease-out" style="width: 14.28%"></div>
+  </div>
+
+  <!-- Modern Dots Navigation -->
+  <div id="dots" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4 z-20"></div>
+
+  <!-- Celebration Modal -->
+  <div id="wishModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="glass p-8 rounded-2xl max-w-md mx-4 text-center text-white transform scale-95 transition-transform duration-300">
+      <div class="text-6xl mb-4">🎉</div>
+      <h3 class="text-2xl font-bold mb-4 font-dancing">Make Your Birthday Wish!</h3>
+      <p class="mb-6 opacity-90">Close your eyes, make a wish, and let the magic happen...</p>
+      <button onclick="closeWish()" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
+        ✨ Wish Made! ✨
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
